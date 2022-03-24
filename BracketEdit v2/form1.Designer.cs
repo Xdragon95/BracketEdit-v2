@@ -687,6 +687,7 @@
             this.G1P2NAME.Name = "G1P2NAME";
             this.G1P2NAME.Size = new System.Drawing.Size(165, 23);
             this.G1P2NAME.TabIndex = 9;
+            this.G1P2NAME.Text = "Player2";
             this.G1P2NAME.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // G1P1NAME
@@ -697,6 +698,7 @@
             this.G1P1NAME.Name = "G1P1NAME";
             this.G1P1NAME.Size = new System.Drawing.Size(165, 23);
             this.G1P1NAME.TabIndex = 8;
+            this.G1P1NAME.Text = "Player1";
             this.G1P1NAME.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // groupBox1
@@ -724,6 +726,7 @@
             this.ScoreboardLocation.Name = "ScoreboardLocation";
             this.ScoreboardLocation.Size = new System.Drawing.Size(272, 23);
             this.ScoreboardLocation.TabIndex = 12;
+            this.ScoreboardLocation.Text = "C:\\Users\\xdrag\\Desktop\\Bracket\\Scoreboard";
             // 
             // label22
             // 
@@ -741,6 +744,7 @@
             this.MainFolderLocationBox.Name = "MainFolderLocationBox";
             this.MainFolderLocationBox.Size = new System.Drawing.Size(273, 23);
             this.MainFolderLocationBox.TabIndex = 11;
+            this.MainFolderLocationBox.Text = "C:\\Users\\xdrag\\Desktop\\Bracket";
             // 
             // SetGroups2
             // 
@@ -1433,7 +1437,6 @@
             this.PlayerSwitchBox.TabIndex = 34;
             this.PlayerSwitchBox.Text = "Switched?";
             this.PlayerSwitchBox.UseVisualStyleBackColor = true;
-            this.PlayerSwitchBox.Visible = false;
             // 
             // AutoSaveResults
             // 
@@ -2235,7 +2238,7 @@
             // 
             // timer1
             // 
-            this.timer1.Interval = 3000;
+            this.timer1.Interval = 2000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // BracketEditv2

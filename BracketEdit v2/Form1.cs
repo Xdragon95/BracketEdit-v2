@@ -7,22 +7,23 @@ namespace BracketEdit_v2
             InitializeComponent();
         }
         //Defining things for later use.
-        private string Old_Name = ""; //Edit button placeholder for playerlist
-        private string Folder_Name = ""; //folder defining stuff
-        private int Score1 = 0; //group score placeholders
-        private int Score2 = 0;
-        private int Score3 = 0;
-        private int Score4 = 0;
-        private int Score5 = 0;
-        private int Score6 = 0;
-        private int Score7 = 0;
-        private int Score8 = 0;
-        private int SBP1Score = 0; //scoreboard score placeholders
-        private int SBP2Score = 0;
-        private int Placeholder = 0; //scoreboard switch placeholder
-        private int GroupIdentifier = 0; //identifies which group is the active match for autosave functionality
-        private string Player1Name = ""; 
-        private string Player2Name = "";
+        string Old_Name = ""; //Edit button placeholder for playerlist
+        string Folder_Name = ""; //folder defining stuff
+        int Score1 = 0; //group score placeholders
+        int Score2 = 0;
+        int Score3 = 0;
+        int Score4 = 0;
+        int Score5 = 0;
+        int Score6 = 0;
+        int Score7 = 0;
+        int Score8 = 0;
+        int SBP1Score = 0; //scoreboard score placeholders
+        int SBP2Score = 0;
+        int SBPlaceholder = 0; //scoreboard switch placeholder
+        int GroupIdentifier = 0; //identifies which group is the active match for autosave functionality
+        string SBPlaceholderName = "";
+        string SBPlayer1N = "";
+        string SBPlayer2N = "";
 
         private void SetGroups2_CheckedChanged(object sender, EventArgs e)
         {
@@ -708,14 +709,12 @@ namespace BracketEdit_v2
         private void G1ActiveMatchButton_Click(object sender, EventArgs e)
         {
             SBBracketArea.Text = G1BracketAreaBox.Text;
-            SBPlayer1Score.Text = G1P1Score.Text;
-            SBPlayer2Score.Text = G1P2Score.Text;
-            Player1Name = G1P1NAME.Text;
-            Player2Name = G1P2NAME.Text;
+            SBPlayer1N = G1P1NAME.Text;
+            SBPlayer2N = G1P2NAME.Text;
+            SBPlayer1Name.Text = SBPlayer1N;
+            SBPlayer2Name.Text = SBPlayer2N;
             SBP1Score = 0;
             SBP2Score = 0;
-            SBPlayer1Name.Text = G1P1NAME.Text;
-            SBPlayer2Name.Text = G1P2NAME.Text;
             SBPlayer1Score.Text = "0";
             SBPlayer2Score.Text = "0";
             PlayerSwitchBox.Checked = false;
@@ -738,10 +737,8 @@ namespace BracketEdit_v2
         private void G2ActiveMatchButton_Click(object sender, EventArgs e)
         {
             SBBracketArea.Text = G2BracketAreaBox.Text;
-            SBPlayer1Score.Text = G2P1Score.Text;
-            SBPlayer2Score.Text = G2P2Score.Text;
-            Player1Name = G2P1NAME.Text;
-            Player2Name = G2P2NAME.Text;
+            SBPlayer1N = G2P1NAME.Text;
+            SBPlayer2N = G2P2NAME.Text;
             SBP1Score = 0;
             SBP2Score = 0;
             SBPlayer1Name.Text = G2P1NAME.Text;
@@ -767,10 +764,8 @@ namespace BracketEdit_v2
         private void G3ActiveMatchButton_Click(object sender, EventArgs e)
         {
             SBBracketArea.Text = G3BracketAreaBox.Text;
-            SBPlayer1Score.Text = G3P1Score.Text;
-            SBPlayer2Score.Text = G3P2Score.Text;
-            Player1Name = G3P1NAME.Text;
-            Player2Name = G3P2NAME.Text;
+            SBPlayer1N = G3P1NAME.Text;
+            SBPlayer2N = G3P2NAME.Text;
             SBP1Score = 0;
             SBP2Score = 0;
             SBPlayer1Name.Text = G3P1NAME.Text;
@@ -796,10 +791,8 @@ namespace BracketEdit_v2
         private void G4ActiveMatchButton_Click(object sender, EventArgs e)
         {
             SBBracketArea.Text = G4BracketAreaBox.Text;
-            SBPlayer1Score.Text = G4P1Score.Text;
-            SBPlayer2Score.Text = G4P2Score.Text;
-            Player1Name = G4P1NAME.Text;
-            Player2Name = G4P2NAME.Text;
+            SBPlayer1N = G4P1NAME.Text;
+            SBPlayer2N = G4P2NAME.Text;
             SBP1Score = 0;
             SBP2Score = 0;
             SBPlayer1Name.Text = G4P1NAME.Text;
@@ -951,15 +944,16 @@ namespace BracketEdit_v2
         }
         private void SBSwitchButton_Click(object sender, EventArgs e)
         {
-            string text1 = SBPlayer1Name.Text;
-            string score1 = SBPlayer1Score.Text;
-            SBPlayer1Name.Text = SBPlayer2Name.Text;
-            SBPlayer1Score.Text = SBPlayer2Score.Text;
-            SBPlayer2Name.Text = text1;
-            SBPlayer2Score.Text = score1;
-            Placeholder = SBP1Score;
-            SBP1Score = SBP2Score;
-            SBP2Score = Placeholder;
+            SBPlaceholder = SBP1Score;
+            SBPlaceholderName = SBPlayer1N; //Placeholders get P1 Name and Score
+            SBPlayer1N = SBPlayer2N;
+            SBP1Score = SBP2Score; //P1 gets P2 Name and Score
+            SBPlayer2N = SBPlaceholderName;
+            SBP2Score = SBPlaceholder; //P2 gets Placeholder Name and Score
+            SBPlayer1Name.Text = SBPlayer1N;
+            SBPlayer2Name.Text = SBPlayer2N;
+            SBPlayer1Score.Text = SBP1Score.ToString();
+            SBPlayer2Score.Text = SBP2Score.ToString();
             if (PlayerSwitchBox.Checked == true)
                 PlayerSwitchBox.Checked = false;
             else if (PlayerSwitchBox.Checked == false)
@@ -999,6 +993,7 @@ namespace BracketEdit_v2
         }
         private void FinishMatchButton_Click(object sender, EventArgs e)
         {
+            //MessageBox.Show(SBP1Score.ToString(), SBP2Score.ToString());
             if (ScoreboardLocation.Text == "")
             {
                 MessageBox.Show("Specify the location of your scoreboard folder.");
@@ -1008,21 +1003,19 @@ namespace BracketEdit_v2
             {
                 if (SBP1Score > SBP2Score)
                 {
-                    File.WriteAllText(MainFolderLocationBox.Text + "//" + SBWinnerLocation.Text + ".txt", Player1Name);
+                    File.WriteAllText(MainFolderLocationBox.Text + "//" + SBWinnerLocation.Text + ".txt", SBPlayer1N);
                     if (SBLoserLocation.Text != "")
                     {
-                        File.WriteAllText(MainFolderLocationBox.Text + "//" + SBLoserLocation.Text + ".txt", Player2Name);
+                        File.WriteAllText(MainFolderLocationBox.Text + "//" + SBLoserLocation.Text + ".txt", SBPlayer2N);
                     }
-
                 }
                 else if (SBP1Score < SBP2Score)
                 {
-                    File.WriteAllText(MainFolderLocationBox.Text + "//" + SBWinnerLocation.Text + ".txt", Player2Name);
+                    File.WriteAllText(MainFolderLocationBox.Text + "//" + SBWinnerLocation.Text + ".txt", SBPlayer2N);
                     if (SBLoserLocation.Text != "")
                     {
-                        File.WriteAllText(MainFolderLocationBox.Text + "//" + SBLoserLocation.Text + ".txt", Player1Name);
+                        File.WriteAllText(MainFolderLocationBox.Text + "//" + SBLoserLocation.Text + ".txt", SBPlayer1N);
                     }
-
                 }
                 else if (SBP1Score == SBP2Score)
                 {
@@ -1031,94 +1024,119 @@ namespace BracketEdit_v2
                 }
                 if (GroupIdentifier == 1)
                 {
-                    G1P1Score.Text = SBPlayer1Score.Text;
-                    G1P2Score.Text = SBPlayer2Score.Text;
+                    G1P1Score.Text = SBP1Score.ToString();
+                    G1P2Score.Text = SBP2Score.ToString();
                     if (AutoSaveResults.Checked == true)
+                    {
                         SaveG1.PerformClick();
+                    }
                 }
-                if (GroupIdentifier == 2)
+                else if (GroupIdentifier == 2)
                 {
-                    G2P1Score.Text = SBPlayer1Score.Text;
-                    G2P2Score.Text = SBPlayer2Score.Text;
+                    G2P1Score.Text = SBP1Score.ToString();
+                    G2P2Score.Text = SBP2Score.ToString();
                     if (AutoSaveResults.Checked == true)
+                    {
                         SaveG2.PerformClick();
+                    }
                 }
-                if (GroupIdentifier == 3)
+                else if (GroupIdentifier == 3)
                 {
-                    G3P1Score.Text = SBPlayer1Score.Text;
-                    G3P2Score.Text = SBPlayer2Score.Text;
+                    G3P1Score.Text = SBP1Score.ToString();
+                    G3P2Score.Text = SBP2Score.ToString();
                     if (AutoSaveResults.Checked == true)
+                    {
                         SaveG3.PerformClick();
+                    }
                 }
-                if (GroupIdentifier == 4)
+                else if (GroupIdentifier == 4)
                 {
-                    G4P1Score.Text = SBPlayer1Score.Text;
-                    G4P2Score.Text = SBPlayer2Score.Text;
+                    G4P1Score.Text = SBP1Score.ToString();
+                    G4P2Score.Text = SBP2Score.ToString();
                     if (AutoSaveResults.Checked == true)
+                    {
                         SaveG4.PerformClick();
+                    }
                 }
+                SBBracketArea.Text = "";
+                SBPlayer1Score.Text = "0";
+                SBPlayer2Score.Text = "0";
+                SBPlayer1Name.Text = "";
+                SBPlayer2Name.Text = "";
+                SBP1Score = 0;
+                SBP2Score = 0;
+                PlayerSwitchBox.Checked = false;
+                GroupIdentifier = 0;
             }
-            if (PlayerSwitchBox.Checked == true)
+            else if (PlayerSwitchBox.Checked == true)
+            {
                 if (SBP1Score > SBP2Score)
                 {
-                    File.WriteAllText(MainFolderLocationBox.Text + "//" + SBWinnerLocation.Text + ".txt", Player2Name);
+                    File.WriteAllText(MainFolderLocationBox.Text + "//" + SBWinnerLocation.Text + ".txt", SBPlayer1N);
                     if (SBLoserLocation.Text != "")
                     {
-                        File.WriteAllText(MainFolderLocationBox.Text + "//" + SBLoserLocation.Text + ".txt", Player1Name);
+                        File.WriteAllText(MainFolderLocationBox.Text + "//" + SBLoserLocation.Text + ".txt", SBPlayer2N);
                     }
-
                 }
                 else if (SBP1Score < SBP2Score)
                 {
-                    File.WriteAllText(MainFolderLocationBox.Text + "//" + SBWinnerLocation.Text + ".txt", Player1Name);
+                    File.WriteAllText(MainFolderLocationBox.Text + "//" + SBWinnerLocation.Text + ".txt", SBPlayer2N);
                     if (SBLoserLocation.Text != "")
                     {
-                        File.WriteAllText(MainFolderLocationBox.Text + "//" + SBLoserLocation.Text + ".txt", Player2Name);
+                        File.WriteAllText(MainFolderLocationBox.Text + "//" + SBLoserLocation.Text + ".txt", SBPlayer1N);
                     }
-
                 }
                 else if (SBP1Score == SBP2Score)
                 {
                     MessageBox.Show("A winner has not been determined.");
                     return;
                 }
-            if (GroupIdentifier == 1)
-            {
-                G1P1Score.Text = SBPlayer2Score.Text;
-                G1P2Score.Text = SBPlayer1Score.Text;
-                if (AutoSaveResults.Checked == true)
-                    SaveG1.PerformClick();
+                if (GroupIdentifier == 1)
+                {
+                    G1P1Score.Text = SBP2Score.ToString();
+                    G1P2Score.Text = SBP1Score.ToString();
+                    if (AutoSaveResults.Checked == true)
+                    {
+                        SaveG1.PerformClick();
+                    }
+                }
+                else if (GroupIdentifier == 2)
+                {
+                    G2P1Score.Text = SBP2Score.ToString();
+                    G2P2Score.Text = SBP1Score.ToString();
+                    if (AutoSaveResults.Checked == true)
+                    {
+                        SaveG2.PerformClick();
+                    }
+                }
+                else if (GroupIdentifier == 3)
+                {
+                    G3P1Score.Text = SBP2Score.ToString();
+                    G3P2Score.Text = SBP1Score.ToString();
+                    if (AutoSaveResults.Checked == true)
+                    {
+                        SaveG3.PerformClick();
+                    }
+                }
+                else if (GroupIdentifier == 4)
+                {
+                    G4P1Score.Text = SBP2Score.ToString();
+                    G4P2Score.Text = SBP1Score.ToString();
+                    if (AutoSaveResults.Checked == true)
+                    {
+                        SaveG4.PerformClick();
+                    }
+                }
+                SBBracketArea.Text = "";
+                SBPlayer1Score.Text = "0";
+                SBPlayer2Score.Text = "0";
+                SBPlayer1Name.Text = "";
+                SBPlayer2Name.Text = "";
+                SBP1Score = 0;
+                SBP2Score = 0;
+                PlayerSwitchBox.Checked = false;
+                GroupIdentifier = 0;
             }
-            if (GroupIdentifier == 2)
-            {
-                G2P1Score.Text = SBPlayer2Score.Text;
-                G2P2Score.Text = SBPlayer1Score.Text;
-                if (AutoSaveResults.Checked == true)
-                    SaveG2.PerformClick();
-            }
-            if (GroupIdentifier == 3)
-            {
-                G3P1Score.Text = SBPlayer2Score.Text;
-                G3P2Score.Text = SBPlayer1Score.Text;
-                if (AutoSaveResults.Checked == true)
-                    SaveG3.PerformClick();
-            }
-            if (GroupIdentifier == 4)
-            {
-                G4P1Score.Text = SBPlayer2Score.Text;
-                G4P2Score.Text = SBPlayer1Score.Text;
-                if (AutoSaveResults.Checked == true)
-                    SaveG4.PerformClick();
-            }
-            SBBracketArea.Text = "";
-            SBPlayer1Score.Text = "0";
-            SBPlayer2Score.Text = "0";
-            SBPlayer1Name.Text = "";
-            SBPlayer2Name.Text = "";
-            SBP1Score = 0;
-            SBP2Score = 0;
-            PlayerSwitchBox.Checked = false;
-            GroupIdentifier = 0;
         }
         //All Bracket Group Functionality here
         private void ViewBracketButton_Click(object sender, EventArgs e)
