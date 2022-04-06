@@ -708,6 +708,11 @@ namespace BracketEdit_v2
         //Active Match Buttons
         private void G1ActiveMatchButton_Click(object sender, EventArgs e)
         {
+            if (BracketSize1.Checked==false & BracketSize2.Checked==false & BracketSize3.Checked==false & BracketSize4.Checked==false)
+            {
+                MessageBox.Show("Please set the size of your bracket.");
+                return;
+            }
             SBBracketArea.Text = G1BracketAreaBox.Text;
             SBPlayer1N = G1P1NAME.Text;
             SBPlayer2N = G1P2NAME.Text;
@@ -736,6 +741,11 @@ namespace BracketEdit_v2
         }
         private void G2ActiveMatchButton_Click(object sender, EventArgs e)
         {
+            if (BracketSize1.Checked == false & BracketSize2.Checked == false & BracketSize3.Checked == false & BracketSize4.Checked == false)
+            {
+                MessageBox.Show("Please set the size of your bracket.");
+                return;
+            }
             SBBracketArea.Text = G2BracketAreaBox.Text;
             SBPlayer1N = G2P1NAME.Text;
             SBPlayer2N = G2P2NAME.Text;
@@ -763,6 +773,11 @@ namespace BracketEdit_v2
         }
         private void G3ActiveMatchButton_Click(object sender, EventArgs e)
         {
+            if (BracketSize1.Checked == false & BracketSize2.Checked == false & BracketSize3.Checked == false & BracketSize4.Checked == false)
+            {
+                MessageBox.Show("Please set the size of your bracket.");
+                return;
+            }
             SBBracketArea.Text = G3BracketAreaBox.Text;
             SBPlayer1N = G3P1NAME.Text;
             SBPlayer2N = G3P2NAME.Text;
@@ -790,6 +805,11 @@ namespace BracketEdit_v2
         }
         private void G4ActiveMatchButton_Click(object sender, EventArgs e)
         {
+            if (BracketSize1.Checked == false & BracketSize2.Checked == false & BracketSize3.Checked == false & BracketSize4.Checked == false)
+            {
+                MessageBox.Show("Please set the size of your bracket.");
+                return;
+            }
             SBBracketArea.Text = G4BracketAreaBox.Text;
             SBPlayer1N = G4P1NAME.Text;
             SBPlayer2N = G4P2NAME.Text;
@@ -868,16 +888,28 @@ namespace BracketEdit_v2
 
         {
             //Winners Side
-            if (SBBracketArea.Text == "Winners Semis 1")
+            if (SBBracketArea.Text == "Winners Semis 1" && BracketSize1.Checked==true | BracketSize3.Checked==true)
             {
                 SBWinnerLocation.Text = "Winners Finals" + "\\" + "Player 1";
                 SBLoserLocation.Text = "Losers Quarters 2" + "\\" + "Player 1";
                 SBBracketArea.Text = "Winners Semis";
             }
-            if (SBBracketArea.Text == "Winners Semis 2")
+            else if (SBBracketArea.Text == "Winners Semis 1" && BracketSize2.Checked == true | BracketSize4.Checked == true)
+            {
+                SBWinnerLocation.Text = "Winners Finals" + "\\" + "Player 1";
+                SBLoserLocation.Text = "Losers Quarters 1" + "\\" + "Player 1";
+                SBBracketArea.Text = "Winners Semis";
+            }
+            if (SBBracketArea.Text == "Winners Semis 2" && BracketSize1.Checked == true | BracketSize3.Checked == true)
             {
                 SBWinnerLocation.Text = "Winners Finals" + "\\" + "Player 2";
                 SBLoserLocation.Text = "Losers Quarters 1" + "\\" + "Player 1";
+                SBBracketArea.Text = "Winners Semis";
+            }
+            else if (SBBracketArea.Text == "Winners Semis 2" && BracketSize2.Checked == true | BracketSize4.Checked == true)
+            {
+                SBWinnerLocation.Text = "Winners Finals" + "\\" + "Player 2";
+                SBLoserLocation.Text = "Losers Quarters 2" + "\\" + "Player 1";
                 SBBracketArea.Text = "Winners Semis";
             }
             if (SBBracketArea.Text == "Winners Finals")

@@ -69,6 +69,12 @@
             this.G1P2NAME = new System.Windows.Forms.TextBox();
             this.G1P1NAME = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.BracketSize4 = new System.Windows.Forms.RadioButton();
+            this.BracketSize1 = new System.Windows.Forms.RadioButton();
+            this.BracketSize3 = new System.Windows.Forms.RadioButton();
+            this.BracketSize2 = new System.Windows.Forms.RadioButton();
+            this.label28 = new System.Windows.Forms.Label();
             this.ScoreboardLocation = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.MainFolderLocationBox = new System.Windows.Forms.TextBox();
@@ -208,6 +214,7 @@
             this.groupBox5.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.ScoreboardGroup.SuspendLayout();
@@ -492,7 +499,7 @@
             this.G1ActiveMatchButton.Location = new System.Drawing.Point(386, 14);
             this.G1ActiveMatchButton.Name = "G1ActiveMatchButton";
             this.G1ActiveMatchButton.Size = new System.Drawing.Size(56, 80);
-            this.G1ActiveMatchButton.TabIndex = 9;
+            this.G1ActiveMatchButton.TabIndex = 12;
             this.G1ActiveMatchButton.Text = "Make Active Match";
             this.toolTip1.SetToolTip(this.G1ActiveMatchButton, "Click this button to open up the Scoreboard using this group to fill in appropria" +
         "te textboxes.");
@@ -608,7 +615,7 @@
             this.G1P2Score.MaxLength = 2;
             this.G1P2Score.Name = "G1P2Score";
             this.G1P2Score.Size = new System.Drawing.Size(24, 23);
-            this.G1P2Score.TabIndex = 13;
+            this.G1P2Score.TabIndex = 11;
             this.G1P2Score.Text = "0";
             this.G1P2Score.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.G1P2Score.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.G1P2Score_KeyPress);
@@ -663,7 +670,7 @@
             this.G1P1Score.MaxLength = 2;
             this.G1P1Score.Name = "G1P1Score";
             this.G1P1Score.Size = new System.Drawing.Size(24, 23);
-            this.G1P1Score.TabIndex = 12;
+            this.G1P1Score.TabIndex = 9;
             this.G1P1Score.Text = "0";
             this.G1P1Score.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.G1P1Score.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.G1P1Score_KeyPress);
@@ -686,8 +693,7 @@
             this.G1P2NAME.Location = new System.Drawing.Point(68, 72);
             this.G1P2NAME.Name = "G1P2NAME";
             this.G1P2NAME.Size = new System.Drawing.Size(165, 23);
-            this.G1P2NAME.TabIndex = 9;
-            this.G1P2NAME.Text = "Player2";
+            this.G1P2NAME.TabIndex = 10;
             this.G1P2NAME.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // G1P1NAME
@@ -698,11 +704,12 @@
             this.G1P1NAME.Name = "G1P1NAME";
             this.G1P1NAME.Size = new System.Drawing.Size(165, 23);
             this.G1P1NAME.TabIndex = 8;
-            this.G1P1NAME.Text = "Player1";
             this.G1P1NAME.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.panel1);
+            this.groupBox1.Controls.Add(this.label28);
             this.groupBox1.Controls.Add(this.ScoreboardLocation);
             this.groupBox1.Controls.Add(this.label22);
             this.groupBox1.Controls.Add(this.MainFolderLocationBox);
@@ -720,19 +727,82 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Setup";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.BracketSize4);
+            this.panel1.Controls.Add(this.BracketSize1);
+            this.panel1.Controls.Add(this.BracketSize3);
+            this.panel1.Controls.Add(this.BracketSize2);
+            this.panel1.Location = new System.Drawing.Point(244, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(209, 25);
+            this.panel1.TabIndex = 15;
+            // 
+            // BracketSize4
+            // 
+            this.BracketSize4.AutoSize = true;
+            this.BracketSize4.Location = new System.Drawing.Point(150, 3);
+            this.BracketSize4.Name = "BracketSize4";
+            this.BracketSize4.Size = new System.Drawing.Size(54, 19);
+            this.BracketSize4.TabIndex = 17;
+            this.BracketSize4.TabStop = true;
+            this.BracketSize4.Text = "34-66";
+            this.BracketSize4.UseVisualStyleBackColor = true;
+            // 
+            // BracketSize1
+            // 
+            this.BracketSize1.AutoSize = true;
+            this.BracketSize1.Location = new System.Drawing.Point(3, 3);
+            this.BracketSize1.Name = "BracketSize1";
+            this.BracketSize1.Size = new System.Drawing.Size(39, 19);
+            this.BracketSize1.TabIndex = 14;
+            this.BracketSize1.TabStop = true;
+            this.BracketSize1.Text = "≤9";
+            this.BracketSize1.UseVisualStyleBackColor = true;
+            // 
+            // BracketSize3
+            // 
+            this.BracketSize3.AutoSize = true;
+            this.BracketSize3.Location = new System.Drawing.Point(96, 3);
+            this.BracketSize3.Name = "BracketSize3";
+            this.BracketSize3.Size = new System.Drawing.Size(54, 19);
+            this.BracketSize3.TabIndex = 16;
+            this.BracketSize3.TabStop = true;
+            this.BracketSize3.Text = "18-33";
+            this.BracketSize3.UseVisualStyleBackColor = true;
+            // 
+            // BracketSize2
+            // 
+            this.BracketSize2.AutoSize = true;
+            this.BracketSize2.Location = new System.Drawing.Point(42, 3);
+            this.BracketSize2.Name = "BracketSize2";
+            this.BracketSize2.Size = new System.Drawing.Size(54, 19);
+            this.BracketSize2.TabIndex = 15;
+            this.BracketSize2.TabStop = true;
+            this.BracketSize2.Text = "10-17";
+            this.BracketSize2.UseVisualStyleBackColor = true;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(166, 16);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(72, 15);
+            this.label28.TabIndex = 13;
+            this.label28.Text = "Bracket Size:";
+            // 
             // ScoreboardLocation
             // 
-            this.ScoreboardLocation.Location = new System.Drawing.Point(172, 70);
+            this.ScoreboardLocation.Location = new System.Drawing.Point(165, 70);
             this.ScoreboardLocation.Name = "ScoreboardLocation";
-            this.ScoreboardLocation.Size = new System.Drawing.Size(272, 23);
+            this.ScoreboardLocation.Size = new System.Drawing.Size(276, 23);
             this.ScoreboardLocation.TabIndex = 12;
-            this.ScoreboardLocation.Text = "C:\\Users\\xdrag\\Desktop\\Bracket\\Scoreboard";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
             this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(16, 16);
+            this.label22.Location = new System.Drawing.Point(9, 16);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(85, 15);
             this.label22.TabIndex = 6;
@@ -740,17 +810,16 @@
             // 
             // MainFolderLocationBox
             // 
-            this.MainFolderLocationBox.Location = new System.Drawing.Point(172, 39);
+            this.MainFolderLocationBox.Location = new System.Drawing.Point(165, 39);
             this.MainFolderLocationBox.Name = "MainFolderLocationBox";
-            this.MainFolderLocationBox.Size = new System.Drawing.Size(273, 23);
+            this.MainFolderLocationBox.Size = new System.Drawing.Size(277, 23);
             this.MainFolderLocationBox.TabIndex = 11;
-            this.MainFolderLocationBox.Text = "C:\\Users\\xdrag\\Desktop\\Bracket";
             // 
             // SetGroups2
             // 
             this.SetGroups2.AutoSize = true;
             this.SetGroups2.ForeColor = System.Drawing.Color.White;
-            this.SetGroups2.Location = new System.Drawing.Point(104, 14);
+            this.SetGroups2.Location = new System.Drawing.Point(97, 14);
             this.SetGroups2.Name = "SetGroups2";
             this.SetGroups2.Size = new System.Drawing.Size(31, 19);
             this.SetGroups2.TabIndex = 7;
@@ -761,7 +830,7 @@
             // ScoreboardLocationButton
             // 
             this.ScoreboardLocationButton.ForeColor = System.Drawing.Color.Black;
-            this.ScoreboardLocationButton.Location = new System.Drawing.Point(141, 70);
+            this.ScoreboardLocationButton.Location = new System.Drawing.Point(134, 70);
             this.ScoreboardLocationButton.Name = "ScoreboardLocationButton";
             this.ScoreboardLocationButton.Size = new System.Drawing.Size(25, 23);
             this.ScoreboardLocationButton.TabIndex = 10;
@@ -773,7 +842,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(16, 43);
+            this.label23.Location = new System.Drawing.Point(9, 43);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(122, 15);
             this.label23.TabIndex = 6;
@@ -782,7 +851,7 @@
             // MainBracketLocationButton
             // 
             this.MainBracketLocationButton.ForeColor = System.Drawing.Color.Black;
-            this.MainBracketLocationButton.Location = new System.Drawing.Point(141, 39);
+            this.MainBracketLocationButton.Location = new System.Drawing.Point(134, 39);
             this.MainBracketLocationButton.Name = "MainBracketLocationButton";
             this.MainBracketLocationButton.Size = new System.Drawing.Size(25, 23);
             this.MainBracketLocationButton.TabIndex = 9;
@@ -794,7 +863,7 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(16, 74);
+            this.label24.Location = new System.Drawing.Point(9, 74);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(119, 15);
             this.label24.TabIndex = 7;
@@ -806,7 +875,7 @@
             this.SetGroups4.AutoSize = true;
             this.SetGroups4.Checked = true;
             this.SetGroups4.ForeColor = System.Drawing.Color.White;
-            this.SetGroups4.Location = new System.Drawing.Point(141, 14);
+            this.SetGroups4.Location = new System.Drawing.Point(128, 14);
             this.SetGroups4.Name = "SetGroups4";
             this.SetGroups4.Size = new System.Drawing.Size(31, 19);
             this.SetGroups4.TabIndex = 8;
@@ -1422,7 +1491,7 @@
             this.ScoreboardGroup.ForeColor = System.Drawing.Color.White;
             this.ScoreboardGroup.Location = new System.Drawing.Point(12, 553);
             this.ScoreboardGroup.Name = "ScoreboardGroup";
-            this.ScoreboardGroup.Size = new System.Drawing.Size(454, 228);
+            this.ScoreboardGroup.Size = new System.Drawing.Size(454, 227);
             this.ScoreboardGroup.TabIndex = 11;
             this.ScoreboardGroup.TabStop = false;
             this.ScoreboardGroup.Text = "Scoreboard";
@@ -1437,6 +1506,7 @@
             this.PlayerSwitchBox.TabIndex = 34;
             this.PlayerSwitchBox.Text = "Switched?";
             this.PlayerSwitchBox.UseVisualStyleBackColor = true;
+            this.PlayerSwitchBox.Visible = false;
             // 
             // AutoSaveResults
             // 
@@ -1455,7 +1525,6 @@
             this.SBLoserLocation.Name = "SBLoserLocation";
             this.SBLoserLocation.Size = new System.Drawing.Size(236, 23);
             this.SBLoserLocation.TabIndex = 32;
-            this.SBLoserLocation.Visible = false;
             // 
             // SBWinnerLocation
             // 
@@ -1464,7 +1533,6 @@
             this.SBWinnerLocation.Name = "SBWinnerLocation";
             this.SBWinnerLocation.Size = new System.Drawing.Size(236, 23);
             this.SBWinnerLocation.TabIndex = 31;
-            this.SBWinnerLocation.Visible = false;
             // 
             // button10
             // 
@@ -1475,7 +1543,6 @@
             this.button10.TabIndex = 29;
             this.button10.Text = "...";
             this.button10.UseVisualStyleBackColor = true;
-            this.button10.Visible = false;
             // 
             // button9
             // 
@@ -1486,7 +1553,6 @@
             this.button9.TabIndex = 28;
             this.button9.Text = "...";
             this.button9.UseVisualStyleBackColor = true;
-            this.button9.Visible = false;
             // 
             // label25
             // 
@@ -1497,7 +1563,6 @@
             this.label25.Size = new System.Drawing.Size(53, 15);
             this.label25.TabIndex = 25;
             this.label25.Text = "Loser To:";
-            this.label25.Visible = false;
             // 
             // label26
             // 
@@ -1508,7 +1573,6 @@
             this.label26.Size = new System.Drawing.Size(63, 15);
             this.label26.TabIndex = 24;
             this.label26.Text = "Winner To:";
-            this.label26.Visible = false;
             // 
             // FinishMatchButton
             // 
@@ -1579,7 +1643,7 @@
             this.SBPlayer2Score.MaxLength = 2;
             this.SBPlayer2Score.Multiline = true;
             this.SBPlayer2Score.Name = "SBPlayer2Score";
-            this.SBPlayer2Score.Size = new System.Drawing.Size(75, 75);
+            this.SBPlayer2Score.Size = new System.Drawing.Size(75, 77);
             this.SBPlayer2Score.TabIndex = 7;
             this.SBPlayer2Score.Text = "0";
             this.SBPlayer2Score.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2248,10 +2312,10 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.ClientSize = new System.Drawing.Size(615, 1021);
+            this.ClientSize = new System.Drawing.Size(619, 1021);
+            this.Controls.Add(this.ScoreboardGroup);
             this.Controls.Add(this.ViewBracketButton);
             this.Controls.Add(this.Top8Bracket);
-            this.Controls.Add(this.ScoreboardGroup);
             this.Controls.Add(this.EditPlayerButton);
             this.Controls.Add(this.RemovePlayerButton);
             this.Controls.Add(this.ScoreboardButton);
@@ -2278,6 +2342,8 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -2400,13 +2466,10 @@
         private Button EditPlayerButton;
         private TextBox SBLoserLocation;
         private TextBox SBWinnerLocation;
-        private TextBox textBox6;
         private Button button10;
         private Button button9;
-        private Button button6;
         private Label label25;
         private Label label26;
-        private Label label27;
         private Button FinishMatchButton;
         private Button SBSaveAllButton;
         private Button SBSwitchButton;
@@ -2478,5 +2541,11 @@
         private CheckBox AutoSaveResults;
         private CheckBox PlayerSwitchBox;
         private Button BracketResetButton;
+        private RadioButton BracketSize1;
+        private Label label28;
+        private RadioButton BracketSize4;
+        private RadioButton BracketSize3;
+        private RadioButton BracketSize2;
+        private Panel panel1;
     }
 }
