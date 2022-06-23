@@ -245,9 +245,9 @@
             this.groupBox5.Controls.Add(this.label4);
             this.groupBox5.Controls.Add(this.G4BracketAreaBox);
             this.groupBox5.ForeColor = System.Drawing.Color.White;
-            this.groupBox5.Location = new System.Drawing.Point(12, 444);
+            this.groupBox5.Location = new System.Drawing.Point(12, 412);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(454, 109);
+            this.groupBox5.Size = new System.Drawing.Size(454, 100);
             this.groupBox5.TabIndex = 0;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Group 4";
@@ -313,7 +313,7 @@
             // G4S2DECREMENT
             // 
             this.G4S2DECREMENT.ForeColor = System.Drawing.Color.Black;
-            this.G4S2DECREMENT.Location = new System.Drawing.Point(291, 70);
+            this.G4S2DECREMENT.Location = new System.Drawing.Point(291, 65);
             this.G4S2DECREMENT.Name = "G4S2DECREMENT";
             this.G4S2DECREMENT.Size = new System.Drawing.Size(23, 23);
             this.G4S2DECREMENT.TabIndex = 30;
@@ -325,7 +325,7 @@
             // G4S2INCREMENT
             // 
             this.G4S2INCREMENT.ForeColor = System.Drawing.Color.Black;
-            this.G4S2INCREMENT.Location = new System.Drawing.Point(344, 70);
+            this.G4S2INCREMENT.Location = new System.Drawing.Point(344, 65);
             this.G4S2INCREMENT.Name = "G4S2INCREMENT";
             this.G4S2INCREMENT.Size = new System.Drawing.Size(23, 23);
             this.G4S2INCREMENT.TabIndex = 29;
@@ -362,7 +362,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(34, 71);
+            this.label18.Location = new System.Drawing.Point(34, 66);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(31, 21);
             this.label18.TabIndex = 19;
@@ -370,7 +370,7 @@
             // 
             // G4P2Score
             // 
-            this.G4P2Score.Location = new System.Drawing.Point(317, 70);
+            this.G4P2Score.Location = new System.Drawing.Point(317, 65);
             this.G4P2Score.MaxLength = 2;
             this.G4P2Score.Name = "G4P2Score";
             this.G4P2Score.Size = new System.Drawing.Size(24, 23);
@@ -406,7 +406,7 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(236, 71);
+            this.label20.Location = new System.Drawing.Point(236, 66);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(52, 21);
             this.label20.TabIndex = 21;
@@ -416,7 +416,7 @@
             // 
             this.G4P2NAME.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.G4P2NAME.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.G4P2NAME.Location = new System.Drawing.Point(68, 70);
+            this.G4P2NAME.Location = new System.Drawing.Point(68, 65);
             this.G4P2NAME.Name = "G4P2NAME";
             this.G4P2NAME.Size = new System.Drawing.Size(165, 23);
             this.G4P2NAME.TabIndex = 25;
@@ -458,7 +458,7 @@
             "Losers Semis",
             "Losers Finals",
             "Grand Finals",
-            "Reset Finals"});
+            "Grand Finals Reset"});
             this.G4BracketAreaBox.Location = new System.Drawing.Point(119, 14);
             this.G4BracketAreaBox.Name = "G4BracketAreaBox";
             this.G4BracketAreaBox.Size = new System.Drawing.Size(114, 23);
@@ -486,9 +486,9 @@
             this.groupBox2.Controls.Add(this.G1P2NAME);
             this.groupBox2.Controls.Add(this.G1P1NAME);
             this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(12, 117);
+            this.groupBox2.Location = new System.Drawing.Point(12, 112);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(454, 109);
+            this.groupBox2.Size = new System.Drawing.Size(454, 100);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Group 1";
@@ -498,7 +498,7 @@
             this.G1ActiveMatchButton.ForeColor = System.Drawing.Color.Black;
             this.G1ActiveMatchButton.Location = new System.Drawing.Point(386, 14);
             this.G1ActiveMatchButton.Name = "G1ActiveMatchButton";
-            this.G1ActiveMatchButton.Size = new System.Drawing.Size(56, 80);
+            this.G1ActiveMatchButton.Size = new System.Drawing.Size(56, 76);
             this.G1ActiveMatchButton.TabIndex = 12;
             this.G1ActiveMatchButton.Text = "Make Active Match";
             this.toolTip1.SetToolTip(this.G1ActiveMatchButton, "Click this button to open up the Scoreboard using this group to fill in appropria" +
@@ -532,7 +532,7 @@
             // G1S2DECREMENT
             // 
             this.G1S2DECREMENT.ForeColor = System.Drawing.Color.Black;
-            this.G1S2DECREMENT.Location = new System.Drawing.Point(291, 72);
+            this.G1S2DECREMENT.Location = new System.Drawing.Point(291, 67);
             this.G1S2DECREMENT.Name = "G1S2DECREMENT";
             this.G1S2DECREMENT.Size = new System.Drawing.Size(23, 23);
             this.G1S2DECREMENT.TabIndex = 16;
@@ -555,7 +555,7 @@
             // G1S2INCREMENT
             // 
             this.G1S2INCREMENT.ForeColor = System.Drawing.Color.Black;
-            this.G1S2INCREMENT.Location = new System.Drawing.Point(344, 72);
+            this.G1S2INCREMENT.Location = new System.Drawing.Point(344, 67);
             this.G1S2INCREMENT.Name = "G1S2INCREMENT";
             this.G1S2INCREMENT.Size = new System.Drawing.Size(23, 23);
             this.G1S2INCREMENT.TabIndex = 15;
@@ -603,7 +603,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(34, 73);
+            this.label6.Location = new System.Drawing.Point(34, 68);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(31, 21);
             this.label6.TabIndex = 3;
@@ -611,7 +611,7 @@
             // 
             // G1P2Score
             // 
-            this.G1P2Score.Location = new System.Drawing.Point(317, 72);
+            this.G1P2Score.Location = new System.Drawing.Point(317, 67);
             this.G1P2Score.MaxLength = 2;
             this.G1P2Score.Name = "G1P2Score";
             this.G1P2Score.Size = new System.Drawing.Size(24, 23);
@@ -657,7 +657,7 @@
             "Losers Semis",
             "Losers Finals",
             "Grand Finals",
-            "Reset Finals"});
+            "Grand Finals Reset"});
             this.G1BracketAreaBox.Location = new System.Drawing.Point(119, 14);
             this.G1BracketAreaBox.Name = "G1BracketAreaBox";
             this.G1BracketAreaBox.Size = new System.Drawing.Size(114, 23);
@@ -680,7 +680,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(236, 73);
+            this.label8.Location = new System.Drawing.Point(236, 68);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(52, 21);
             this.label8.TabIndex = 5;
@@ -690,7 +690,7 @@
             // 
             this.G1P2NAME.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.G1P2NAME.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.G1P2NAME.Location = new System.Drawing.Point(68, 72);
+            this.G1P2NAME.Location = new System.Drawing.Point(68, 67);
             this.G1P2NAME.Name = "G1P2NAME";
             this.G1P2NAME.Size = new System.Drawing.Size(165, 23);
             this.G1P2NAME.TabIndex = 10;
@@ -708,6 +708,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupBox1.Controls.Add(this.panel1);
             this.groupBox1.Controls.Add(this.label28);
             this.groupBox1.Controls.Add(this.ScoreboardLocation);
@@ -722,7 +723,7 @@
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(454, 105);
+            this.groupBox1.Size = new System.Drawing.Size(454, 100);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Setup";
@@ -748,6 +749,7 @@
             this.BracketSize4.TabStop = true;
             this.BracketSize4.Text = "34-66";
             this.BracketSize4.UseVisualStyleBackColor = true;
+            this.BracketSize4.CheckedChanged += new System.EventHandler(this.BracketSize4_CheckedChanged);
             // 
             // BracketSize1
             // 
@@ -759,6 +761,7 @@
             this.BracketSize1.TabStop = true;
             this.BracketSize1.Text = "≤9";
             this.BracketSize1.UseVisualStyleBackColor = true;
+            this.BracketSize1.CheckedChanged += new System.EventHandler(this.BracketSize1_CheckedChanged);
             // 
             // BracketSize3
             // 
@@ -770,6 +773,7 @@
             this.BracketSize3.TabStop = true;
             this.BracketSize3.Text = "18-33";
             this.BracketSize3.UseVisualStyleBackColor = true;
+            this.BracketSize3.CheckedChanged += new System.EventHandler(this.BracketSize3_CheckedChanged);
             // 
             // BracketSize2
             // 
@@ -781,6 +785,7 @@
             this.BracketSize2.TabStop = true;
             this.BracketSize2.Text = "10-17";
             this.BracketSize2.UseVisualStyleBackColor = true;
+            this.BracketSize2.CheckedChanged += new System.EventHandler(this.BracketSize2_CheckedChanged);
             // 
             // label28
             // 
@@ -793,9 +798,9 @@
             // 
             // ScoreboardLocation
             // 
-            this.ScoreboardLocation.Location = new System.Drawing.Point(165, 70);
+            this.ScoreboardLocation.Location = new System.Drawing.Point(165, 62);
             this.ScoreboardLocation.Name = "ScoreboardLocation";
-            this.ScoreboardLocation.Size = new System.Drawing.Size(276, 23);
+            this.ScoreboardLocation.Size = new System.Drawing.Size(277, 23);
             this.ScoreboardLocation.TabIndex = 12;
             // 
             // label22
@@ -830,7 +835,7 @@
             // ScoreboardLocationButton
             // 
             this.ScoreboardLocationButton.ForeColor = System.Drawing.Color.Black;
-            this.ScoreboardLocationButton.Location = new System.Drawing.Point(134, 70);
+            this.ScoreboardLocationButton.Location = new System.Drawing.Point(134, 62);
             this.ScoreboardLocationButton.Name = "ScoreboardLocationButton";
             this.ScoreboardLocationButton.Size = new System.Drawing.Size(25, 23);
             this.ScoreboardLocationButton.TabIndex = 10;
@@ -863,7 +868,7 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(9, 74);
+            this.label24.Location = new System.Drawing.Point(9, 66);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(119, 15);
             this.label24.TabIndex = 7;
@@ -905,9 +910,9 @@
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.G2BracketAreaBox);
             this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(12, 226);
+            this.groupBox3.Location = new System.Drawing.Point(12, 212);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(454, 109);
+            this.groupBox3.Size = new System.Drawing.Size(454, 100);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Group 2";
@@ -973,7 +978,7 @@
             // G2S2DECREMENT
             // 
             this.G2S2DECREMENT.ForeColor = System.Drawing.Color.Black;
-            this.G2S2DECREMENT.Location = new System.Drawing.Point(291, 70);
+            this.G2S2DECREMENT.Location = new System.Drawing.Point(291, 65);
             this.G2S2DECREMENT.Name = "G2S2DECREMENT";
             this.G2S2DECREMENT.Size = new System.Drawing.Size(23, 23);
             this.G2S2DECREMENT.TabIndex = 30;
@@ -985,7 +990,7 @@
             // G2S2INCREMENT
             // 
             this.G2S2INCREMENT.ForeColor = System.Drawing.Color.Black;
-            this.G2S2INCREMENT.Location = new System.Drawing.Point(344, 70);
+            this.G2S2INCREMENT.Location = new System.Drawing.Point(344, 65);
             this.G2S2INCREMENT.Name = "G2S2INCREMENT";
             this.G2S2INCREMENT.Size = new System.Drawing.Size(23, 23);
             this.G2S2INCREMENT.TabIndex = 29;
@@ -1022,7 +1027,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(34, 71);
+            this.label10.Location = new System.Drawing.Point(34, 66);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(31, 21);
             this.label10.TabIndex = 19;
@@ -1030,7 +1035,7 @@
             // 
             // G2P2Score
             // 
-            this.G2P2Score.Location = new System.Drawing.Point(317, 70);
+            this.G2P2Score.Location = new System.Drawing.Point(317, 65);
             this.G2P2Score.MaxLength = 2;
             this.G2P2Score.Name = "G2P2Score";
             this.G2P2Score.Size = new System.Drawing.Size(24, 23);
@@ -1066,7 +1071,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(236, 71);
+            this.label12.Location = new System.Drawing.Point(236, 66);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(52, 21);
             this.label12.TabIndex = 21;
@@ -1076,7 +1081,7 @@
             // 
             this.G2P2NAME.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.G2P2NAME.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.G2P2NAME.Location = new System.Drawing.Point(68, 70);
+            this.G2P2NAME.Location = new System.Drawing.Point(68, 65);
             this.G2P2NAME.Name = "G2P2NAME";
             this.G2P2NAME.Size = new System.Drawing.Size(165, 23);
             this.G2P2NAME.TabIndex = 25;
@@ -1118,7 +1123,7 @@
             "Losers Semis",
             "Losers Finals",
             "Grand Finals",
-            "Reset Finals"});
+            "Grand Finals Reset"});
             this.G2BracketAreaBox.Location = new System.Drawing.Point(119, 14);
             this.G2BracketAreaBox.Name = "G2BracketAreaBox";
             this.G2BracketAreaBox.Size = new System.Drawing.Size(114, 23);
@@ -1146,9 +1151,9 @@
             this.groupBox4.Controls.Add(this.label3);
             this.groupBox4.Controls.Add(this.G3BracketAreaBox);
             this.groupBox4.ForeColor = System.Drawing.Color.White;
-            this.groupBox4.Location = new System.Drawing.Point(12, 335);
+            this.groupBox4.Location = new System.Drawing.Point(12, 312);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(454, 109);
+            this.groupBox4.Size = new System.Drawing.Size(454, 100);
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Group 3";
@@ -1214,7 +1219,7 @@
             // G3S2DECREMENT
             // 
             this.G3S2DECREMENT.ForeColor = System.Drawing.Color.Black;
-            this.G3S2DECREMENT.Location = new System.Drawing.Point(291, 70);
+            this.G3S2DECREMENT.Location = new System.Drawing.Point(291, 65);
             this.G3S2DECREMENT.Name = "G3S2DECREMENT";
             this.G3S2DECREMENT.Size = new System.Drawing.Size(23, 23);
             this.G3S2DECREMENT.TabIndex = 30;
@@ -1226,7 +1231,7 @@
             // G3S2INCREMENT
             // 
             this.G3S2INCREMENT.ForeColor = System.Drawing.Color.Black;
-            this.G3S2INCREMENT.Location = new System.Drawing.Point(344, 70);
+            this.G3S2INCREMENT.Location = new System.Drawing.Point(344, 65);
             this.G3S2INCREMENT.Name = "G3S2INCREMENT";
             this.G3S2INCREMENT.Size = new System.Drawing.Size(23, 23);
             this.G3S2INCREMENT.TabIndex = 29;
@@ -1263,7 +1268,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(34, 71);
+            this.label14.Location = new System.Drawing.Point(34, 66);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(31, 21);
             this.label14.TabIndex = 19;
@@ -1271,7 +1276,7 @@
             // 
             // G3P2Score
             // 
-            this.G3P2Score.Location = new System.Drawing.Point(317, 70);
+            this.G3P2Score.Location = new System.Drawing.Point(317, 65);
             this.G3P2Score.MaxLength = 2;
             this.G3P2Score.Name = "G3P2Score";
             this.G3P2Score.Size = new System.Drawing.Size(24, 23);
@@ -1307,7 +1312,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(236, 71);
+            this.label16.Location = new System.Drawing.Point(236, 66);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(52, 21);
             this.label16.TabIndex = 21;
@@ -1317,7 +1322,7 @@
             // 
             this.G3P2NAME.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.G3P2NAME.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.G3P2NAME.Location = new System.Drawing.Point(68, 70);
+            this.G3P2NAME.Location = new System.Drawing.Point(68, 65);
             this.G3P2NAME.Name = "G3P2NAME";
             this.G3P2NAME.Size = new System.Drawing.Size(165, 23);
             this.G3P2NAME.TabIndex = 25;
@@ -1359,7 +1364,7 @@
             "Losers Semis",
             "Losers Finals",
             "Grand Finals",
-            "Reset Finals"});
+            "Grand Finals Reset"});
             this.G3BracketAreaBox.Location = new System.Drawing.Point(119, 14);
             this.G3BracketAreaBox.Name = "G3BracketAreaBox";
             this.G3BracketAreaBox.Size = new System.Drawing.Size(114, 23);
@@ -1489,9 +1494,9 @@
             this.ScoreboardGroup.Controls.Add(this.groupBox8);
             this.ScoreboardGroup.Controls.Add(this.SBBracketArea);
             this.ScoreboardGroup.ForeColor = System.Drawing.Color.White;
-            this.ScoreboardGroup.Location = new System.Drawing.Point(12, 553);
+            this.ScoreboardGroup.Location = new System.Drawing.Point(12, 512);
             this.ScoreboardGroup.Name = "ScoreboardGroup";
-            this.ScoreboardGroup.Size = new System.Drawing.Size(454, 227);
+            this.ScoreboardGroup.Size = new System.Drawing.Size(454, 225);
             this.ScoreboardGroup.TabIndex = 11;
             this.ScoreboardGroup.TabStop = false;
             this.ScoreboardGroup.Text = "Scoreboard";
@@ -1765,7 +1770,7 @@
             "Winners Semis",
             "Winners Finals",
             "Grand Finals",
-            "Reset Finals",
+            "Grand Finals Reset",
             "Losers Round 1",
             "Losers Round 2",
             "Losers Eighths",
@@ -1830,9 +1835,9 @@
             this.Top8Bracket.Controls.Add(this.WS1S1);
             this.Top8Bracket.Controls.Add(this.WS1N1);
             this.Top8Bracket.ForeColor = System.Drawing.Color.White;
-            this.Top8Bracket.Location = new System.Drawing.Point(12, 781);
+            this.Top8Bracket.Location = new System.Drawing.Point(12, 737);
             this.Top8Bracket.Name = "Top8Bracket";
-            this.Top8Bracket.Size = new System.Drawing.Size(586, 225);
+            this.Top8Bracket.Size = new System.Drawing.Size(586, 220);
             this.Top8Bracket.TabIndex = 12;
             this.Top8Bracket.TabStop = false;
             this.Top8Bracket.Text = "Current Top 8 Bracket Layout";
@@ -1842,7 +1847,7 @@
             // 
             this.groupBox6.Controls.Add(this.AutoLoadCheck);
             this.groupBox6.Controls.Add(this.LoadBracket);
-            this.groupBox6.Location = new System.Drawing.Point(8, 21);
+            this.groupBox6.Location = new System.Drawing.Point(8, 19);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(120, 66);
             this.groupBox6.TabIndex = 14;
@@ -1873,7 +1878,7 @@
             // RFS2
             // 
             this.RFS2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.RFS2.Location = new System.Drawing.Point(560, 113);
+            this.RFS2.Location = new System.Drawing.Point(560, 111);
             this.RFS2.Name = "RFS2";
             this.RFS2.ReadOnly = true;
             this.RFS2.Size = new System.Drawing.Size(18, 22);
@@ -1883,7 +1888,7 @@
             // RFN2
             // 
             this.RFN2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.RFN2.Location = new System.Drawing.Point(440, 113);
+            this.RFN2.Location = new System.Drawing.Point(440, 111);
             this.RFN2.Name = "RFN2";
             this.RFN2.ReadOnly = true;
             this.RFN2.Size = new System.Drawing.Size(120, 22);
@@ -1892,7 +1897,7 @@
             // RFS1
             // 
             this.RFS1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.RFS1.Location = new System.Drawing.Point(560, 91);
+            this.RFS1.Location = new System.Drawing.Point(560, 89);
             this.RFS1.Name = "RFS1";
             this.RFS1.ReadOnly = true;
             this.RFS1.Size = new System.Drawing.Size(18, 22);
@@ -1902,7 +1907,7 @@
             // RFN1
             // 
             this.RFN1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.RFN1.Location = new System.Drawing.Point(440, 91);
+            this.RFN1.Location = new System.Drawing.Point(440, 89);
             this.RFN1.Name = "RFN1";
             this.RFN1.ReadOnly = true;
             this.RFN1.Size = new System.Drawing.Size(120, 22);
@@ -1911,45 +1916,49 @@
             // LFS2
             // 
             this.LFS2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LFS2.Location = new System.Drawing.Point(560, 172);
+            this.LFS2.Location = new System.Drawing.Point(560, 161);
             this.LFS2.Name = "LFS2";
             this.LFS2.ReadOnly = true;
             this.LFS2.Size = new System.Drawing.Size(18, 22);
             this.LFS2.TabIndex = 43;
             this.LFS2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.LFS2.TextChanged += new System.EventHandler(this.LFS2_TextChanged);
             // 
             // LFN2
             // 
             this.LFN2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LFN2.Location = new System.Drawing.Point(440, 172);
+            this.LFN2.Location = new System.Drawing.Point(440, 161);
             this.LFN2.Name = "LFN2";
             this.LFN2.ReadOnly = true;
             this.LFN2.Size = new System.Drawing.Size(120, 22);
             this.LFN2.TabIndex = 42;
+            this.LFN2.TextChanged += new System.EventHandler(this.LFN2_TextChanged);
             // 
             // LFS1
             // 
             this.LFS1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LFS1.Location = new System.Drawing.Point(560, 150);
+            this.LFS1.Location = new System.Drawing.Point(560, 139);
             this.LFS1.Name = "LFS1";
             this.LFS1.ReadOnly = true;
             this.LFS1.Size = new System.Drawing.Size(18, 22);
             this.LFS1.TabIndex = 41;
             this.LFS1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.LFS1.TextChanged += new System.EventHandler(this.LFS1_TextChanged);
             // 
             // LFN1
             // 
             this.LFN1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LFN1.Location = new System.Drawing.Point(440, 150);
+            this.LFN1.Location = new System.Drawing.Point(440, 139);
             this.LFN1.Name = "LFN1";
             this.LFN1.ReadOnly = true;
             this.LFN1.Size = new System.Drawing.Size(120, 22);
             this.LFN1.TabIndex = 40;
+            this.LFN1.TextChanged += new System.EventHandler(this.LFN1_TextChanged);
             // 
             // GFS2
             // 
             this.GFS2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.GFS2.Location = new System.Drawing.Point(560, 63);
+            this.GFS2.Location = new System.Drawing.Point(560, 61);
             this.GFS2.Name = "GFS2";
             this.GFS2.ReadOnly = true;
             this.GFS2.Size = new System.Drawing.Size(18, 22);
@@ -1959,7 +1968,7 @@
             // GFN2
             // 
             this.GFN2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.GFN2.Location = new System.Drawing.Point(440, 63);
+            this.GFN2.Location = new System.Drawing.Point(440, 61);
             this.GFN2.Name = "GFN2";
             this.GFN2.ReadOnly = true;
             this.GFN2.Size = new System.Drawing.Size(120, 22);
@@ -1968,7 +1977,7 @@
             // GFS1
             // 
             this.GFS1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.GFS1.Location = new System.Drawing.Point(560, 41);
+            this.GFS1.Location = new System.Drawing.Point(560, 39);
             this.GFS1.Name = "GFS1";
             this.GFS1.ReadOnly = true;
             this.GFS1.Size = new System.Drawing.Size(18, 22);
@@ -1978,7 +1987,7 @@
             // GFN1
             // 
             this.GFN1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.GFN1.Location = new System.Drawing.Point(440, 41);
+            this.GFN1.Location = new System.Drawing.Point(440, 39);
             this.GFN1.Name = "GFN1";
             this.GFN1.ReadOnly = true;
             this.GFN1.Size = new System.Drawing.Size(120, 22);
@@ -1987,45 +1996,49 @@
             // LSS2
             // 
             this.LSS2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LSS2.Location = new System.Drawing.Point(416, 172);
+            this.LSS2.Location = new System.Drawing.Point(416, 161);
             this.LSS2.Name = "LSS2";
             this.LSS2.ReadOnly = true;
             this.LSS2.Size = new System.Drawing.Size(18, 22);
             this.LSS2.TabIndex = 35;
             this.LSS2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.LSS2.TextChanged += new System.EventHandler(this.LSS2_TextChanged);
             // 
             // LSN2
             // 
             this.LSN2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LSN2.Location = new System.Drawing.Point(296, 172);
+            this.LSN2.Location = new System.Drawing.Point(296, 161);
             this.LSN2.Name = "LSN2";
             this.LSN2.ReadOnly = true;
             this.LSN2.Size = new System.Drawing.Size(120, 22);
             this.LSN2.TabIndex = 34;
+            this.LSN2.TextChanged += new System.EventHandler(this.LSN2_TextChanged);
             // 
             // LSS1
             // 
             this.LSS1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LSS1.Location = new System.Drawing.Point(416, 150);
+            this.LSS1.Location = new System.Drawing.Point(416, 139);
             this.LSS1.Name = "LSS1";
             this.LSS1.ReadOnly = true;
             this.LSS1.Size = new System.Drawing.Size(18, 22);
             this.LSS1.TabIndex = 33;
             this.LSS1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.LSS1.TextChanged += new System.EventHandler(this.LSS1_TextChanged);
             // 
             // LSN1
             // 
             this.LSN1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LSN1.Location = new System.Drawing.Point(296, 150);
+            this.LSN1.Location = new System.Drawing.Point(296, 139);
             this.LSN1.Name = "LSN1";
             this.LSN1.ReadOnly = true;
             this.LSN1.Size = new System.Drawing.Size(120, 22);
             this.LSN1.TabIndex = 32;
+            this.LSN1.TextChanged += new System.EventHandler(this.LSN1_TextChanged);
             // 
             // WFS2
             // 
             this.WFS2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.WFS2.Location = new System.Drawing.Point(416, 63);
+            this.WFS2.Location = new System.Drawing.Point(416, 61);
             this.WFS2.Name = "WFS2";
             this.WFS2.ReadOnly = true;
             this.WFS2.Size = new System.Drawing.Size(18, 22);
@@ -2035,7 +2048,7 @@
             // WFN2
             // 
             this.WFN2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.WFN2.Location = new System.Drawing.Point(296, 63);
+            this.WFN2.Location = new System.Drawing.Point(296, 61);
             this.WFN2.Name = "WFN2";
             this.WFN2.ReadOnly = true;
             this.WFN2.Size = new System.Drawing.Size(120, 22);
@@ -2044,7 +2057,7 @@
             // WFS1
             // 
             this.WFS1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.WFS1.Location = new System.Drawing.Point(416, 41);
+            this.WFS1.Location = new System.Drawing.Point(416, 39);
             this.WFS1.Name = "WFS1";
             this.WFS1.ReadOnly = true;
             this.WFS1.Size = new System.Drawing.Size(18, 22);
@@ -2054,7 +2067,7 @@
             // WFN1
             // 
             this.WFN1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.WFN1.Location = new System.Drawing.Point(296, 41);
+            this.WFN1.Location = new System.Drawing.Point(296, 39);
             this.WFN1.Name = "WFN1";
             this.WFN1.ReadOnly = true;
             this.WFN1.Size = new System.Drawing.Size(120, 22);
@@ -2063,159 +2076,175 @@
             // LQ2S2
             // 
             this.LQ2S2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LQ2S2.Location = new System.Drawing.Point(272, 196);
+            this.LQ2S2.Location = new System.Drawing.Point(272, 185);
             this.LQ2S2.Name = "LQ2S2";
             this.LQ2S2.ReadOnly = true;
             this.LQ2S2.Size = new System.Drawing.Size(18, 22);
             this.LQ2S2.TabIndex = 27;
             this.LQ2S2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.LQ2S2.TextChanged += new System.EventHandler(this.LQ2S2_TextChanged);
             // 
             // LQ2N2
             // 
             this.LQ2N2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LQ2N2.Location = new System.Drawing.Point(152, 196);
+            this.LQ2N2.Location = new System.Drawing.Point(152, 185);
             this.LQ2N2.Name = "LQ2N2";
             this.LQ2N2.ReadOnly = true;
             this.LQ2N2.Size = new System.Drawing.Size(120, 22);
             this.LQ2N2.TabIndex = 26;
+            this.LQ2N2.TextChanged += new System.EventHandler(this.LQ2N2_TextChanged);
             // 
             // LQ2S1
             // 
             this.LQ2S1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LQ2S1.Location = new System.Drawing.Point(272, 174);
+            this.LQ2S1.Location = new System.Drawing.Point(272, 163);
             this.LQ2S1.Name = "LQ2S1";
             this.LQ2S1.ReadOnly = true;
             this.LQ2S1.Size = new System.Drawing.Size(18, 22);
             this.LQ2S1.TabIndex = 25;
             this.LQ2S1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.LQ2S1.TextChanged += new System.EventHandler(this.LQ2S1_TextChanged);
             // 
             // LQ2N1
             // 
             this.LQ2N1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LQ2N1.Location = new System.Drawing.Point(152, 174);
+            this.LQ2N1.Location = new System.Drawing.Point(152, 163);
             this.LQ2N1.Name = "LQ2N1";
             this.LQ2N1.ReadOnly = true;
             this.LQ2N1.Size = new System.Drawing.Size(120, 22);
             this.LQ2N1.TabIndex = 24;
+            this.LQ2N1.TextChanged += new System.EventHandler(this.LQ2N1_TextChanged);
             // 
             // LQ1S2
             // 
             this.LQ1S2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LQ1S2.Location = new System.Drawing.Point(272, 146);
+            this.LQ1S2.Location = new System.Drawing.Point(272, 135);
             this.LQ1S2.Name = "LQ1S2";
             this.LQ1S2.ReadOnly = true;
             this.LQ1S2.Size = new System.Drawing.Size(18, 22);
             this.LQ1S2.TabIndex = 23;
             this.LQ1S2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.LQ1S2.TextChanged += new System.EventHandler(this.LQ1S2_TextChanged);
             // 
             // LQ1N2
             // 
             this.LQ1N2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LQ1N2.Location = new System.Drawing.Point(152, 146);
+            this.LQ1N2.Location = new System.Drawing.Point(152, 135);
             this.LQ1N2.Name = "LQ1N2";
             this.LQ1N2.ReadOnly = true;
             this.LQ1N2.Size = new System.Drawing.Size(120, 22);
             this.LQ1N2.TabIndex = 22;
+            this.LQ1N2.TextChanged += new System.EventHandler(this.LQ1N2_TextChanged);
             // 
             // LQ1S1
             // 
             this.LQ1S1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LQ1S1.Location = new System.Drawing.Point(272, 124);
+            this.LQ1S1.Location = new System.Drawing.Point(272, 113);
             this.LQ1S1.Name = "LQ1S1";
             this.LQ1S1.ReadOnly = true;
             this.LQ1S1.Size = new System.Drawing.Size(18, 22);
             this.LQ1S1.TabIndex = 21;
             this.LQ1S1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.LQ1S1.TextChanged += new System.EventHandler(this.LQ1S1_TextChanged);
             // 
             // LQ1N1
             // 
             this.LQ1N1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LQ1N1.Location = new System.Drawing.Point(152, 124);
+            this.LQ1N1.Location = new System.Drawing.Point(152, 113);
             this.LQ1N1.Name = "LQ1N1";
             this.LQ1N1.ReadOnly = true;
             this.LQ1N1.Size = new System.Drawing.Size(120, 22);
             this.LQ1N1.TabIndex = 20;
+            this.LQ1N1.TextChanged += new System.EventHandler(this.LQ1N1_TextChanged);
             // 
             // LE2S2
             // 
             this.LE2S2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LE2S2.Location = new System.Drawing.Point(128, 196);
+            this.LE2S2.Location = new System.Drawing.Point(128, 185);
             this.LE2S2.Name = "LE2S2";
             this.LE2S2.ReadOnly = true;
             this.LE2S2.Size = new System.Drawing.Size(18, 22);
             this.LE2S2.TabIndex = 19;
             this.LE2S2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.LE2S2.TextChanged += new System.EventHandler(this.LE2S2_TextChanged);
             // 
             // LE2N2
             // 
             this.LE2N2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LE2N2.Location = new System.Drawing.Point(8, 196);
+            this.LE2N2.Location = new System.Drawing.Point(8, 185);
             this.LE2N2.Name = "LE2N2";
             this.LE2N2.ReadOnly = true;
             this.LE2N2.Size = new System.Drawing.Size(120, 22);
             this.LE2N2.TabIndex = 18;
+            this.LE2N2.TextChanged += new System.EventHandler(this.LE2N2_TextChanged);
             // 
             // LE2S1
             // 
             this.LE2S1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LE2S1.Location = new System.Drawing.Point(128, 174);
+            this.LE2S1.Location = new System.Drawing.Point(128, 163);
             this.LE2S1.Name = "LE2S1";
             this.LE2S1.ReadOnly = true;
             this.LE2S1.Size = new System.Drawing.Size(18, 22);
             this.LE2S1.TabIndex = 17;
             this.LE2S1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.LE2S1.TextChanged += new System.EventHandler(this.LE2S1_TextChanged);
             // 
             // LE2N1
             // 
             this.LE2N1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LE2N1.Location = new System.Drawing.Point(8, 174);
+            this.LE2N1.Location = new System.Drawing.Point(8, 163);
             this.LE2N1.Name = "LE2N1";
             this.LE2N1.ReadOnly = true;
             this.LE2N1.Size = new System.Drawing.Size(120, 22);
             this.LE2N1.TabIndex = 16;
+            this.LE2N1.TextChanged += new System.EventHandler(this.LE2N1_TextChanged);
             // 
             // LE1S2
             // 
             this.LE1S2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LE1S2.Location = new System.Drawing.Point(128, 146);
+            this.LE1S2.Location = new System.Drawing.Point(128, 135);
             this.LE1S2.Name = "LE1S2";
             this.LE1S2.ReadOnly = true;
             this.LE1S2.Size = new System.Drawing.Size(18, 22);
             this.LE1S2.TabIndex = 15;
             this.LE1S2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.LE1S2.TextChanged += new System.EventHandler(this.LE1S2_TextChanged);
             // 
             // LE1N2
             // 
             this.LE1N2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LE1N2.Location = new System.Drawing.Point(8, 146);
+            this.LE1N2.Location = new System.Drawing.Point(8, 135);
             this.LE1N2.Name = "LE1N2";
             this.LE1N2.ReadOnly = true;
             this.LE1N2.Size = new System.Drawing.Size(120, 22);
             this.LE1N2.TabIndex = 14;
+            this.LE1N2.TextChanged += new System.EventHandler(this.LE1N2_TextChanged);
             // 
             // LE1S1
             // 
             this.LE1S1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LE1S1.Location = new System.Drawing.Point(128, 124);
+            this.LE1S1.Location = new System.Drawing.Point(128, 113);
             this.LE1S1.Name = "LE1S1";
             this.LE1S1.ReadOnly = true;
             this.LE1S1.Size = new System.Drawing.Size(18, 22);
             this.LE1S1.TabIndex = 13;
             this.LE1S1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.LE1S1.TextChanged += new System.EventHandler(this.LE1S1_TextChanged);
             // 
             // LE1N1
             // 
             this.LE1N1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LE1N1.Location = new System.Drawing.Point(8, 124);
+            this.LE1N1.Location = new System.Drawing.Point(8, 113);
             this.LE1N1.Name = "LE1N1";
             this.LE1N1.ReadOnly = true;
             this.LE1N1.Size = new System.Drawing.Size(120, 22);
             this.LE1N1.TabIndex = 12;
+            this.LE1N1.TextChanged += new System.EventHandler(this.LE1N1_TextChanged);
             // 
             // WS2S2
             // 
             this.WS2S2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.WS2S2.Location = new System.Drawing.Point(272, 87);
+            this.WS2S2.Location = new System.Drawing.Point(272, 85);
             this.WS2S2.Name = "WS2S2";
             this.WS2S2.ReadOnly = true;
             this.WS2S2.Size = new System.Drawing.Size(18, 22);
@@ -2225,7 +2254,7 @@
             // WS2N2
             // 
             this.WS2N2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.WS2N2.Location = new System.Drawing.Point(152, 87);
+            this.WS2N2.Location = new System.Drawing.Point(152, 85);
             this.WS2N2.Name = "WS2N2";
             this.WS2N2.ReadOnly = true;
             this.WS2N2.Size = new System.Drawing.Size(120, 22);
@@ -2234,7 +2263,7 @@
             // WS2S1
             // 
             this.WS2S1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.WS2S1.Location = new System.Drawing.Point(272, 65);
+            this.WS2S1.Location = new System.Drawing.Point(272, 63);
             this.WS2S1.Name = "WS2S1";
             this.WS2S1.ReadOnly = true;
             this.WS2S1.Size = new System.Drawing.Size(18, 22);
@@ -2244,7 +2273,7 @@
             // WS2N1
             // 
             this.WS2N1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.WS2N1.Location = new System.Drawing.Point(152, 65);
+            this.WS2N1.Location = new System.Drawing.Point(152, 63);
             this.WS2N1.Name = "WS2N1";
             this.WS2N1.ReadOnly = true;
             this.WS2N1.Size = new System.Drawing.Size(120, 22);
@@ -2253,7 +2282,7 @@
             // WS1S2
             // 
             this.WS1S2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.WS1S2.Location = new System.Drawing.Point(272, 37);
+            this.WS1S2.Location = new System.Drawing.Point(272, 35);
             this.WS1S2.Name = "WS1S2";
             this.WS1S2.ReadOnly = true;
             this.WS1S2.Size = new System.Drawing.Size(18, 22);
@@ -2263,7 +2292,7 @@
             // WS1N2
             // 
             this.WS1N2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.WS1N2.Location = new System.Drawing.Point(152, 37);
+            this.WS1N2.Location = new System.Drawing.Point(152, 35);
             this.WS1N2.Name = "WS1N2";
             this.WS1N2.ReadOnly = true;
             this.WS1N2.Size = new System.Drawing.Size(120, 22);
@@ -2272,7 +2301,7 @@
             // WS1S1
             // 
             this.WS1S1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.WS1S1.Location = new System.Drawing.Point(272, 15);
+            this.WS1S1.Location = new System.Drawing.Point(272, 13);
             this.WS1S1.Name = "WS1S1";
             this.WS1S1.ReadOnly = true;
             this.WS1S1.Size = new System.Drawing.Size(18, 22);
@@ -2282,7 +2311,7 @@
             // WS1N1
             // 
             this.WS1N1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.WS1N1.Location = new System.Drawing.Point(152, 15);
+            this.WS1N1.Location = new System.Drawing.Point(152, 13);
             this.WS1N1.Name = "WS1N1";
             this.WS1N1.ReadOnly = true;
             this.WS1N1.Size = new System.Drawing.Size(120, 22);
@@ -2307,12 +2336,12 @@
             // 
             // BracketEditv2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.ClientSize = new System.Drawing.Size(619, 1021);
+            this.ClientSize = new System.Drawing.Size(604, 1016);
             this.Controls.Add(this.ScoreboardGroup);
             this.Controls.Add(this.ViewBracketButton);
             this.Controls.Add(this.Top8Bracket);
@@ -2332,9 +2361,10 @@
             this.Controls.Add(this.groupBox5);
             this.ForeColor = System.Drawing.Color.White;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(620, 1055);
             this.MinimizeBox = false;
             this.Name = "BracketEditv2";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "BracketEdit Rev2";
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
