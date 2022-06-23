@@ -182,7 +182,7 @@ namespace BracketEdit_v2
                 string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory); //Creates folder on desktop named Bracket
                 System.IO.Directory.CreateDirectory(desktopPath + "\\Bracket");
                 MainFolderLocationBox.Text = desktopPath + "\\" + "Bracket";
-                MainFolderLocationBox.Text = Folder_Name;
+                Folder_Name = MainFolderLocationBox.Text;
                 System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Winners Semis 1");
                 System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Winners Semis 2");
                 System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Winners Finals");
@@ -250,80 +250,81 @@ namespace BracketEdit_v2
                 System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Finals" + "\\" + "Score 1.txt", "");
                 System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Finals" + "\\" + "Score 2.txt", "");
             }
-            else if (dialogResult == DialogResult.No)
+            else if (dialogResult != DialogResult.Yes)
             {
                 FolderBrowserDialog dialog = new FolderBrowserDialog();
-                if (dialog.ShowDialog() == DialogResult.OK) ;
+                if (dialog.ShowDialog() == DialogResult.OK)
                 {
                     MainFolderLocationBox.Text = dialog.SelectedPath;
-                    MainFolderLocationBox.Text = Folder_Name;
+                    Folder_Name = MainFolderLocationBox.Text;
+
+                    System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Winners Semis 1");
+                    System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Winners Semis 2");
+                    System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Winners Finals");
+                    System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Grand Finals");
+                    System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Reset Finals");
+                    System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Losers Eighths 1");
+                    System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Losers Eighths 2");
+                    System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Losers Quarters 1");
+                    System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Losers Quarters 2");
+                    System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Losers Semis");
+                    System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Losers Finals");
+
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Winners Semis 1" + "\\" + "Player 1.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Winners Semis 1" + "\\" + "Player 2.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Winners Semis 1" + "\\" + "Score 1.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Winners Semis 1" + "\\" + "Score 2.txt", "");
+
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Winners Semis 2" + "\\" + "Player 1.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Winners Semis 2" + "\\" + "Player 2.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Winners Semis 2" + "\\" + "Score 1.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Winners Semis 2" + "\\" + "Score 2.txt", "");
+
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Winners Finals" + "\\" + "Player 1.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Winners Finals" + "\\" + "Player 2.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Winners Finals" + "\\" + "Score 1.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Winners Finals" + "\\" + "Score 2.txt", "");
+
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Grand Finals" + "\\" + "Player 1.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Grand Finals" + "\\" + "Player 2.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Grand Finals" + "\\" + "Score 1.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Grand Finals" + "\\" + "Score 2.txt", "");
+
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Reset Finals" + "\\" + "Player 1.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Reset Finals" + "\\" + "Player 2.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Reset Finals" + "\\" + "Score 1.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Reset Finals" + "\\" + "Score 2.txt", "");
+
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Eighths 1" + "\\" + "Player 1.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Eighths 1" + "\\" + "Player 2.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Eighths 1" + "\\" + "Score 1.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Eighths 1" + "\\" + "Score 2.txt", "");
+
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Eighths 2" + "\\" + "Player 1.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Eighths 2" + "\\" + "Player 2.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Eighths 2" + "\\" + "Score 1.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Eighths 2" + "\\" + "Score 2.txt", "");
+
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Quarters 1" + "\\" + "Player 1.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Quarters 1" + "\\" + "Player 2.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Quarters 1" + "\\" + "Score 1.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Quarters 1" + "\\" + "Score 2.txt", "");
+
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Quarters 2" + "\\" + "Player 1.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Quarters 2" + "\\" + "Player 2.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Quarters 2" + "\\" + "Score 1.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Quarters 2" + "\\" + "Score 2.txt", "");
+
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Semis" + "\\" + "Player 1.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Semis" + "\\" + "Player 2.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Semis" + "\\" + "Score 1.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Semis" + "\\" + "Score 2.txt", "");
+
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Finals" + "\\" + "Player 1.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Finals" + "\\" + "Player 2.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Finals" + "\\" + "Score 1.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Finals" + "\\" + "Score 2.txt", "");
                 }
-                System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Winners Semis 1");
-                System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Winners Semis 2");
-                System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Winners Finals");
-                System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Grand Finals");
-                System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Reset Finals");
-                System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Losers Eighths 1");
-                System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Losers Eighths 2");
-                System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Losers Quarters 1");
-                System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Losers Quarters 2");
-                System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Losers Semis");
-                System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Losers Finals");
-
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Winners Semis 1" + "\\" + "Player 1.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Winners Semis 1" + "\\" + "Player 2.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Winners Semis 1" + "\\" + "Score 1.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Winners Semis 1" + "\\" + "Score 2.txt", "");
-
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Winners Semis 2" + "\\" + "Player 1.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Winners Semis 2" + "\\" + "Player 2.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Winners Semis 2" + "\\" + "Score 1.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Winners Semis 2" + "\\" + "Score 2.txt", "");
-
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Winners Finals" + "\\" + "Player 1.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Winners Finals" + "\\" + "Player 2.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Winners Finals" + "\\" + "Score 1.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Winners Finals" + "\\" + "Score 2.txt", "");
-
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Grand Finals" + "\\" + "Player 1.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Grand Finals" + "\\" + "Player 2.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Grand Finals" + "\\" + "Score 1.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Grand Finals" + "\\" + "Score 2.txt", "");
-
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Reset Finals" + "\\" + "Player 1.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Reset Finals" + "\\" + "Player 2.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Reset Finals" + "\\" + "Score 1.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Reset Finals" + "\\" + "Score 2.txt", "");
-
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Eighths 1" + "\\" + "Player 1.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Eighths 1" + "\\" + "Player 2.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Eighths 1" + "\\" + "Score 1.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Eighths 1" + "\\" + "Score 2.txt", "");
-
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Eighths 2" + "\\" + "Player 1.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Eighths 2" + "\\" + "Player 2.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Eighths 2" + "\\" + "Score 1.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Eighths 2" + "\\" + "Score 2.txt", "");
-
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Quarters 1" + "\\" + "Player 1.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Quarters 1" + "\\" + "Player 2.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Quarters 1" + "\\" + "Score 1.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Quarters 1" + "\\" + "Score 2.txt", "");
-
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Quarters 2" + "\\" + "Player 1.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Quarters 2" + "\\" + "Player 2.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Quarters 2" + "\\" + "Score 1.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Quarters 2" + "\\" + "Score 2.txt", "");
-
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Semis" + "\\" + "Player 1.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Semis" + "\\" + "Player 2.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Semis" + "\\" + "Score 1.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Semis" + "\\" + "Score 2.txt", "");
-
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Finals" + "\\" + "Player 1.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Finals" + "\\" + "Player 2.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Finals" + "\\" + "Score 1.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Finals" + "\\" + "Score 2.txt", "");
             }
         }
         //All of the + and - button functionality here
