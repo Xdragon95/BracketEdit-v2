@@ -1028,6 +1028,8 @@ namespace BracketEdit_v2
             {
                 P1LosersChk.Show();
                 P2LosersChk.Show();
+                SBWinnerLocation.Text = "";
+                SBLoserLocation.Text = "";
             }
             if (SBBracketArea.Text != "Grand Finals")
             {
@@ -1040,6 +1042,9 @@ namespace BracketEdit_v2
                 P2LosersChk.Show();
                 P1LosersChk.Checked = true;
                 P2LosersChk.Checked = true;
+                SBWinnerLocation.Text = "";
+                SBLoserLocation.Text = "";
+
             }
         }
         private void SBSwitchButton_Click(object sender, EventArgs e)
