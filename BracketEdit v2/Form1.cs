@@ -187,7 +187,7 @@ namespace BracketEdit_v2
                 System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Winners Semis 2");
                 System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Winners Finals");
                 System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Grand Finals");
-                System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Reset Finals");
+                System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Grand Finals Reset");
                 System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Losers Eighths 1");
                 System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Losers Eighths 2");
                 System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Losers Quarters 1");
@@ -215,10 +215,10 @@ namespace BracketEdit_v2
                 System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Grand Finals" + "\\" + "Score 1.txt", "");
                 System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Grand Finals" + "\\" + "Score 2.txt", "");
 
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Reset Finals" + "\\" + "Player 1.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Reset Finals" + "\\" + "Player 2.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Reset Finals" + "\\" + "Score 1.txt", "");
-                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Reset Finals" + "\\" + "Score 2.txt", "");
+                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Grand Finals Reset" + "\\" + "Player 1.txt", "");
+                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Grand Finals Reset" + "\\" + "Player 2.txt", "");
+                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Grand Finals Reset" + "\\" + "Score 1.txt", "");
+                System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Grand Finals Reset" + "\\" + "Score 2.txt", "");
 
                 System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Eighths 1" + "\\" + "Player 1.txt", "");
                 System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Eighths 1" + "\\" + "Player 2.txt", "");
@@ -262,7 +262,7 @@ namespace BracketEdit_v2
                     System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Winners Semis 2");
                     System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Winners Finals");
                     System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Grand Finals");
-                    System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Reset Finals");
+                    System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Grand Finals Reset");
                     System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Losers Eighths 1");
                     System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Losers Eighths 2");
                     System.IO.Directory.CreateDirectory(MainFolderLocationBox.Text + "\\" + "Losers Quarters 1");
@@ -290,10 +290,10 @@ namespace BracketEdit_v2
                     System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Grand Finals" + "\\" + "Score 1.txt", "");
                     System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Grand Finals" + "\\" + "Score 2.txt", "");
 
-                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Reset Finals" + "\\" + "Player 1.txt", "");
-                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Reset Finals" + "\\" + "Player 2.txt", "");
-                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Reset Finals" + "\\" + "Score 1.txt", "");
-                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Reset Finals" + "\\" + "Score 2.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Grand Finals Reset" + "\\" + "Player 1.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Grand Finals Reset" + "\\" + "Player 2.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Grand Finals Reset" + "\\" + "Score 1.txt", "");
+                    System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Grand Finals Reset" + "\\" + "Score 2.txt", "");
 
                     System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Eighths 1" + "\\" + "Player 1.txt", "");
                     System.IO.File.WriteAllText(MainFolderLocationBox.Text + "\\" + "Losers Eighths 1" + "\\" + "Player 2.txt", "");
@@ -618,7 +618,7 @@ namespace BracketEdit_v2
         private void G1BracketAreaBox_TextChanged(object sender, EventArgs e)
         {
             if (G1BracketAreaBox.Text == "Winners Semis 1" || G1BracketAreaBox.Text == "Winners Semis 2" || G1BracketAreaBox.Text == "Winners Finals"
-               || G1BracketAreaBox.Text == "Reset Finals" || G1BracketAreaBox.Text == "Grand Finals" || G1BracketAreaBox.Text == "Losers Eighths 1"
+               || G1BracketAreaBox.Text == "Grand Finals Reset" || G1BracketAreaBox.Text == "Grand Finals" || G1BracketAreaBox.Text == "Losers Eighths 1"
                || G1BracketAreaBox.Text == "Losers Eighths 2" || G1BracketAreaBox.Text == "Losers Quarters 1" || G1BracketAreaBox.Text == "Losers Quarters 2"
                || G1BracketAreaBox.Text == "Losers Semis" || G1BracketAreaBox.Text == "Losers Finals")
             {
@@ -637,7 +637,7 @@ namespace BracketEdit_v2
         private void G2BracketAreaBox_TextChanged(object sender, EventArgs e)
         {
             if (G2BracketAreaBox.Text == "Winners Semis 1" || G2BracketAreaBox.Text == "Winners Semis 2" || G2BracketAreaBox.Text == "Winners Finals"
-               || G2BracketAreaBox.Text == "Reset Finals" || G2BracketAreaBox.Text == "Grand Finals" || G2BracketAreaBox.Text == "Losers Eighths 1"
+               || G2BracketAreaBox.Text == "Grand Finals Reset" || G2BracketAreaBox.Text == "Grand Finals" || G2BracketAreaBox.Text == "Losers Eighths 1"
                || G2BracketAreaBox.Text == "Losers Eighths 2" || G2BracketAreaBox.Text == "Losers Quarters 1" || G2BracketAreaBox.Text == "Losers Quarters 2"
                || G2BracketAreaBox.Text == "Losers Semis" || G2BracketAreaBox.Text == "Losers Finals")
             {
@@ -656,7 +656,7 @@ namespace BracketEdit_v2
         private void G3BracketAreaBox_TextChanged(object sender, EventArgs e)
         {
             if (G3BracketAreaBox.Text == "Winners Semis 1" || G3BracketAreaBox.Text == "Winners Semis 2" || G3BracketAreaBox.Text == "Winners Finals"
-               || G3BracketAreaBox.Text == "Reset Finals" || G3BracketAreaBox.Text == "Grand Finals" || G3BracketAreaBox.Text == "Losers Eighths 1"
+               || G3BracketAreaBox.Text == "Grand Finals Reset" || G3BracketAreaBox.Text == "Grand Finals" || G3BracketAreaBox.Text == "Losers Eighths 1"
                || G3BracketAreaBox.Text == "Losers Eighths 2" || G3BracketAreaBox.Text == "Losers Quarters 1" || G3BracketAreaBox.Text == "Losers Quarters 2"
                || G3BracketAreaBox.Text == "Losers Semis" || G3BracketAreaBox.Text == "Losers Finals")
             {
@@ -675,7 +675,7 @@ namespace BracketEdit_v2
         private void G4BracketAreaBox_TextChanged(object sender, EventArgs e)
         {
             if (G4BracketAreaBox.Text == "Winners Semis 1" || G4BracketAreaBox.Text == "Winners Semis 2" || G4BracketAreaBox.Text == "Winners Finals"
-               || G4BracketAreaBox.Text == "Reset Finals" || G4BracketAreaBox.Text == "Grand Finals" || G4BracketAreaBox.Text == "Losers Eighths 1"
+               || G4BracketAreaBox.Text == "Grand Finals Reset" || G4BracketAreaBox.Text == "Grand Finals" || G4BracketAreaBox.Text == "Losers Eighths 1"
                || G4BracketAreaBox.Text == "Losers Eighths 2" || G4BracketAreaBox.Text == "Losers Quarters 1" || G4BracketAreaBox.Text == "Losers Quarters 2"
                || G4BracketAreaBox.Text == "Losers Semis" || G4BracketAreaBox.Text == "Losers Finals")
             {
@@ -1292,10 +1292,10 @@ namespace BracketEdit_v2
                 GFS1.Text = File.ReadAllText(Folder_Name + "\\" + "Grand Finals" + "\\" + "Score 1.txt");
                 GFS2.Text = File.ReadAllText(Folder_Name + "\\" + "Grand Finals" + "\\" + "Score 2.txt");
 
-                RFN1.Text = File.ReadAllText(Folder_Name + "\\" + "Reset Finals" + "\\" + "Player 1.txt");
-                RFN2.Text = File.ReadAllText(Folder_Name + "\\" + "Reset Finals" + "\\" + "Player 2.txt");
-                RFS1.Text = File.ReadAllText(Folder_Name + "\\" + "Reset Finals" + "\\" + "Score 1.txt");
-                RFS2.Text = File.ReadAllText(Folder_Name + "\\" + "Reset Finals" + "\\" + "Score 2.txt");
+                RFN1.Text = File.ReadAllText(Folder_Name + "\\" + "Grand Finals Reset" + "\\" + "Player 1.txt");
+                RFN2.Text = File.ReadAllText(Folder_Name + "\\" + "Grand Finals Reset" + "\\" + "Player 2.txt");
+                RFS1.Text = File.ReadAllText(Folder_Name + "\\" + "Grand Finals Reset" + "\\" + "Score 1.txt");
+                RFS2.Text = File.ReadAllText(Folder_Name + "\\" + "Grand Finals Reset" + "\\" + "Score 2.txt");
 
                 //Losers Side
                 LE1N1.Text = File.ReadAllText(Folder_Name + "\\" + "Losers Eighths 1" + "\\" + "Player 1.txt");
@@ -1414,126 +1414,6 @@ namespace BracketEdit_v2
             LFN2.PlaceholderText = "Winner of LS";
             GFN1.PlaceholderText = "Winner of WF";
             GFN2.PlaceholderText = "Winner of LF";
-        }
-
-        private void LFS2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LFN2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LFS1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LFN1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LSS2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LSN2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LSS1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LSN1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LQ2S2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LQ2N2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LQ2S1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LQ2N1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LQ1S2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LQ1N2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LQ1S1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LQ1N1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LE2S2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LE2N2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LE2S1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LE2N1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LE1S2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LE1N2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LE1S1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LE1N1_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

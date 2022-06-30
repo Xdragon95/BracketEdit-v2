@@ -1835,7 +1835,7 @@
             this.Top8Bracket.Controls.Add(this.WS1S1);
             this.Top8Bracket.Controls.Add(this.WS1N1);
             this.Top8Bracket.ForeColor = System.Drawing.Color.White;
-            this.Top8Bracket.Location = new System.Drawing.Point(12, 737);
+            this.Top8Bracket.Location = new System.Drawing.Point(12, 739);
             this.Top8Bracket.Name = "Top8Bracket";
             this.Top8Bracket.Size = new System.Drawing.Size(586, 220);
             this.Top8Bracket.TabIndex = 12;
@@ -1922,7 +1922,6 @@
             this.LFS2.Size = new System.Drawing.Size(18, 22);
             this.LFS2.TabIndex = 43;
             this.LFS2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.LFS2.TextChanged += new System.EventHandler(this.LFS2_TextChanged);
             // 
             // LFN2
             // 
@@ -1932,7 +1931,6 @@
             this.LFN2.ReadOnly = true;
             this.LFN2.Size = new System.Drawing.Size(120, 22);
             this.LFN2.TabIndex = 42;
-            this.LFN2.TextChanged += new System.EventHandler(this.LFN2_TextChanged);
             // 
             // LFS1
             // 
@@ -1943,7 +1941,6 @@
             this.LFS1.Size = new System.Drawing.Size(18, 22);
             this.LFS1.TabIndex = 41;
             this.LFS1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.LFS1.TextChanged += new System.EventHandler(this.LFS1_TextChanged);
             // 
             // LFN1
             // 
@@ -1953,7 +1950,6 @@
             this.LFN1.ReadOnly = true;
             this.LFN1.Size = new System.Drawing.Size(120, 22);
             this.LFN1.TabIndex = 40;
-            this.LFN1.TextChanged += new System.EventHandler(this.LFN1_TextChanged);
             // 
             // GFS2
             // 
@@ -2002,7 +1998,6 @@
             this.LSS2.Size = new System.Drawing.Size(18, 22);
             this.LSS2.TabIndex = 35;
             this.LSS2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.LSS2.TextChanged += new System.EventHandler(this.LSS2_TextChanged);
             // 
             // LSN2
             // 
@@ -2012,7 +2007,6 @@
             this.LSN2.ReadOnly = true;
             this.LSN2.Size = new System.Drawing.Size(120, 22);
             this.LSN2.TabIndex = 34;
-            this.LSN2.TextChanged += new System.EventHandler(this.LSN2_TextChanged);
             // 
             // LSS1
             // 
@@ -2023,7 +2017,6 @@
             this.LSS1.Size = new System.Drawing.Size(18, 22);
             this.LSS1.TabIndex = 33;
             this.LSS1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.LSS1.TextChanged += new System.EventHandler(this.LSS1_TextChanged);
             // 
             // LSN1
             // 
@@ -2033,7 +2026,6 @@
             this.LSN1.ReadOnly = true;
             this.LSN1.Size = new System.Drawing.Size(120, 22);
             this.LSN1.TabIndex = 32;
-            this.LSN1.TextChanged += new System.EventHandler(this.LSN1_TextChanged);
             // 
             // WFS2
             // 
@@ -2082,7 +2074,6 @@
             this.LQ2S2.Size = new System.Drawing.Size(18, 22);
             this.LQ2S2.TabIndex = 27;
             this.LQ2S2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.LQ2S2.TextChanged += new System.EventHandler(this.LQ2S2_TextChanged);
             // 
             // LQ2N2
             // 
@@ -2092,7 +2083,6 @@
             this.LQ2N2.ReadOnly = true;
             this.LQ2N2.Size = new System.Drawing.Size(120, 22);
             this.LQ2N2.TabIndex = 26;
-            this.LQ2N2.TextChanged += new System.EventHandler(this.LQ2N2_TextChanged);
             // 
             // LQ2S1
             // 
@@ -2103,7 +2093,6 @@
             this.LQ2S1.Size = new System.Drawing.Size(18, 22);
             this.LQ2S1.TabIndex = 25;
             this.LQ2S1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.LQ2S1.TextChanged += new System.EventHandler(this.LQ2S1_TextChanged);
             // 
             // LQ2N1
             // 
@@ -2113,7 +2102,6 @@
             this.LQ2N1.ReadOnly = true;
             this.LQ2N1.Size = new System.Drawing.Size(120, 22);
             this.LQ2N1.TabIndex = 24;
-            this.LQ2N1.TextChanged += new System.EventHandler(this.LQ2N1_TextChanged);
             // 
             // LQ1S2
             // 
@@ -2124,7 +2112,6 @@
             this.LQ1S2.Size = new System.Drawing.Size(18, 22);
             this.LQ1S2.TabIndex = 23;
             this.LQ1S2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.LQ1S2.TextChanged += new System.EventHandler(this.LQ1S2_TextChanged);
             // 
             // LQ1N2
             // 
@@ -2134,7 +2121,6 @@
             this.LQ1N2.ReadOnly = true;
             this.LQ1N2.Size = new System.Drawing.Size(120, 22);
             this.LQ1N2.TabIndex = 22;
-            this.LQ1N2.TextChanged += new System.EventHandler(this.LQ1N2_TextChanged);
             // 
             // LQ1S1
             // 
@@ -2145,7 +2131,6 @@
             this.LQ1S1.Size = new System.Drawing.Size(18, 22);
             this.LQ1S1.TabIndex = 21;
             this.LQ1S1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.LQ1S1.TextChanged += new System.EventHandler(this.LQ1S1_TextChanged);
             // 
             // LQ1N1
             // 
@@ -2155,7 +2140,6 @@
             this.LQ1N1.ReadOnly = true;
             this.LQ1N1.Size = new System.Drawing.Size(120, 22);
             this.LQ1N1.TabIndex = 20;
-            this.LQ1N1.TextChanged += new System.EventHandler(this.LQ1N1_TextChanged);
             // 
             // LE2S2
             // 
@@ -2166,7 +2150,6 @@
             this.LE2S2.Size = new System.Drawing.Size(18, 22);
             this.LE2S2.TabIndex = 19;
             this.LE2S2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.LE2S2.TextChanged += new System.EventHandler(this.LE2S2_TextChanged);
             // 
             // LE2N2
             // 
@@ -2176,7 +2159,6 @@
             this.LE2N2.ReadOnly = true;
             this.LE2N2.Size = new System.Drawing.Size(120, 22);
             this.LE2N2.TabIndex = 18;
-            this.LE2N2.TextChanged += new System.EventHandler(this.LE2N2_TextChanged);
             // 
             // LE2S1
             // 
@@ -2187,7 +2169,6 @@
             this.LE2S1.Size = new System.Drawing.Size(18, 22);
             this.LE2S1.TabIndex = 17;
             this.LE2S1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.LE2S1.TextChanged += new System.EventHandler(this.LE2S1_TextChanged);
             // 
             // LE2N1
             // 
@@ -2197,7 +2178,6 @@
             this.LE2N1.ReadOnly = true;
             this.LE2N1.Size = new System.Drawing.Size(120, 22);
             this.LE2N1.TabIndex = 16;
-            this.LE2N1.TextChanged += new System.EventHandler(this.LE2N1_TextChanged);
             // 
             // LE1S2
             // 
@@ -2208,7 +2188,6 @@
             this.LE1S2.Size = new System.Drawing.Size(18, 22);
             this.LE1S2.TabIndex = 15;
             this.LE1S2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.LE1S2.TextChanged += new System.EventHandler(this.LE1S2_TextChanged);
             // 
             // LE1N2
             // 
@@ -2218,7 +2197,6 @@
             this.LE1N2.ReadOnly = true;
             this.LE1N2.Size = new System.Drawing.Size(120, 22);
             this.LE1N2.TabIndex = 14;
-            this.LE1N2.TextChanged += new System.EventHandler(this.LE1N2_TextChanged);
             // 
             // LE1S1
             // 
@@ -2229,7 +2207,6 @@
             this.LE1S1.Size = new System.Drawing.Size(18, 22);
             this.LE1S1.TabIndex = 13;
             this.LE1S1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.LE1S1.TextChanged += new System.EventHandler(this.LE1S1_TextChanged);
             // 
             // LE1N1
             // 
@@ -2239,7 +2216,6 @@
             this.LE1N1.ReadOnly = true;
             this.LE1N1.Size = new System.Drawing.Size(120, 22);
             this.LE1N1.TabIndex = 12;
-            this.LE1N1.TextChanged += new System.EventHandler(this.LE1N1_TextChanged);
             // 
             // WS2S2
             // 
@@ -2342,9 +2318,9 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.ClientSize = new System.Drawing.Size(604, 1016);
+            this.Controls.Add(this.Top8Bracket);
             this.Controls.Add(this.ScoreboardGroup);
             this.Controls.Add(this.ViewBracketButton);
-            this.Controls.Add(this.Top8Bracket);
             this.Controls.Add(this.EditPlayerButton);
             this.Controls.Add(this.RemovePlayerButton);
             this.Controls.Add(this.ScoreboardButton);
